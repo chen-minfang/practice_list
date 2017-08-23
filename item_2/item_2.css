@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+#container {
+	width: 300px;
+	height: 140px;
+	margin: 0 auto;
+	background-color: #000
+}
+#time {
+	width: 180px;
+	height: 28px;
+	margin: 0 auto;
+	padding: 22px 0;
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFF
+}
+#minu, #sec {
+	display: inline-block;
+	width: 40px;
+	height: 24px;
+	border: 2px solid #666;
+	background-color: #FFF;
+	color: #000;
+	text-align: center;
+	margin: 0 10px
+}
+#button {
+	display: inline-block;
+	width: 284px;
+	height: 50px;
+	background: url('./imgs/btn-1.png') no-repeat;
+	cursor: pointer;
+	margin-left: 8px
+}
