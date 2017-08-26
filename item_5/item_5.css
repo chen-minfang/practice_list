@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+#container {
+	width: 500px;
+	margin: 0 auto;
+	padding: 10px 0;
+	border: 1px solid #CCC;
+	border-radius: 8px
+}
+#cHeader {
+	width: 460px;
+	padding: 0 20px
+}
+#cHeader h3 {
+	font-size: 18px;
+	font-weight: normal;
+	font-family: '微软雅黑';
+	color: #000
+}
+#user {
+	width: 100%;
+	height: 30px;
+	margin: 10px 0
+}
+#user input {
+	width: 150px;
+	height: 26px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	float: left;
+	margin-right: 14px;
+	text-indent: 8px;
+	padding: 0 3px
+}
+#userH {
+	float: left;
+	font-size: 0
+}
+#userH li {
+	display: inline-block;
+	margin-left: 6px
+}
+#userH li img {
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	opacity: 0.5
+}
+#userH li.choosed img, #userH li img:hover {
+	width: 28px;
+	height: 28px;
+	border: 1px solid #F30;
+	opacity: 1.0
+}
+#cHeader textarea {
+	width: 448px;
+	height: 64px;
+	border-radius: 5px;
+	resize:none;
+	padding: 5px
+}
+#bCon {
+	width: 250px;
+	height: 30px;
+	margin: 10px 0 0 210px;
+	padding-bottom: 14px
+}
+#bCon p {
+	float: left;
+	height: 30px;
+	color: #999;
+	margin-right: 10px
+}
+#bCon p span {
+	line-height: 30px;
+	float: left
+}
+#bCon p b {
+	font-family: Georgia, Tahoma, Arial;
+	font-size: 26px;
+	line-height: 30px;
+	float: left;
+	font-weight: normal;
+	margin: 0 6px
+}
+#bCon input {
+	width: 112px;
+	height: 100%;
+	background: url("imgs/btn.png") no-repeat;
+	border: 0;
+	cursor: pointer
+}
+#bCon input:hover {
+	background-position: 0 -30px
+}
+#contentArea {
+	width: 480px;
+	padding: 0 10px;
+}
+#cAHeader {
+	width: 100%;
+	height: 36px;
+	background-color: #E3EAEC
+}
+#cAHeader span {
+	display: inline-block;
+	width: 86px;
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	background-color: #FFF;
+	color: #000;
+	margin: 6px 0 0 6px;
+	text-align: center
+}

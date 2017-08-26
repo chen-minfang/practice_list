@@ -1,3 +1,65 @@
 @charset "utf-8";
 /* CSS Document */
-
+#container {
+	width: 542px;
+	height: 22px;
+	margin: 0 auto;
+	position: relative
+}
+#container span.tip {
+	display: inline-block;
+	height: 100%;
+	line-height: 22px;
+	float: left;
+	margin-right: 8px;
+}
+#stars {
+	position: relative;
+	display: inline-block;
+	margin-top: 2px
+}
+#stars ul {
+	font-size: 0;
+	height: 18px
+}
+#stars ul li {
+	width: 20px;
+	height: 18px;
+	background: url("imgs/star.png") no-repeat;
+	display: inline-block;
+	margin: 0 2px;
+	cursor: pointer;
+}
+#aCon {
+	position: absolute;
+	width: 160px;
+	height: 56px;
+	padding: 11px 10px;
+	background: url("imgs/icon.gif") no-repeat;
+	display: none
+}
+#exhArea p#result {
+	height: 22px;
+	line-height: 22px;
+	position: absolute;
+	top: 0;
+	left: 228px;
+	display: none
+}
+span.count, span.rCount {
+	color: #F60;
+	font-weight: bold
+}
+span.count i, span.rCount i {
+	font-style: normal;
+	display: inline-block;
+	margin-right: 3px
+}
+span.down {
+	display: inline-block;
+	margin-top: 2px;
+	line-height: 16px
+}
+span.right {
+	margin-left: 4px
+}

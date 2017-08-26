@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>星级评分系统</title>
+<title>仿腾讯微博效果</title>
 <link rel = "stylesheet" type = "text/css" href = "../main.css" />
-<link rel = "stylesheet" type = "text/css" href = "item_3.css" />
+<link rel = "stylesheet" type = "text/css" href = "item_5.css" />
 <script src = "../jquery-3.2.1.min.js" type = "text/javascript"></script>
-<script src = "item_3.js" type = "text/javascript"></script>
+<script src = "item_5.js" type = "text/javascript"></script>
 </head>
 
 <body>
@@ -19,9 +19,9 @@
         	<ul>
             	<li><a href = "../item_1/item_1.html">鼠标移入/移出改变图片透明度</a></li>
                 <li><a href = "../item_2/item_2.html">倒计时时钟</a></li>
-                <li class = "choosed"><a href = "">星级评分系统</a></li>
+                <li><a href = "../item_3/item_3.html">星级评分系统</a></li>
                 <li><a href = "../item_4/item_4.html">用键盘控制DIV</a></li>
-                <li><a href = "../item_5/item_5.html">仿腾讯微博效果</a></li>
+                <li class = "choosed"><a href = "">仿腾讯微博效果</a></li>
                 <li><a href = "../item_6/item_6.html">移动效果（按轨迹移动）</a></li>
                 <li><a href = "../item_7/item_7.html">iPhone手机解锁效果</a></li>
                 <li><a href = "../item_8/item_8.html">仿苹果电脑任务栏菜单</a></li>
@@ -38,21 +38,37 @@
         </div>
         <div id = "exhArea">
         	<div id = "container">
-            	<span class = "tip">点击星星就能打分</span>
-                <div id = "stars">
-                	<ul>
-                    	<li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <div id = "aCon">
-                    	<p class = "score"><span class = "count"><i></i>分</span><span class = "appraise"></span></p>
-                        <span class = "detail down"></span>
+            	<div id = "cHeader">
+            		<h3>来 , 说说你在做什么 , 想什么</h3>
+                	<div id = "user">
+                		<input type = "text" />
+                    	<ul id = "userH">
+                    		<li class = "choosed"><img src = "imgs/face1.gif" /></li>
+                       		<li><img src = "imgs/face2.gif" /></li>
+                        	<li><img src = "imgs/face3.gif" /></li>
+                        	<li><img src = "imgs/face4.gif" /></li>
+                        	<li><img src = "imgs/face5.gif" /></li>
+                        	<li><img src = "imgs/face6.gif" /></li>
+                        	<li><img src = "imgs/face7.gif" /></li>
+                        	<li><img src = "imgs/face8.gif" /></li>
+                    	</ul>
+                	</div>
+                    <textarea></textarea>
+                    <div id = "bCon">
+                    	<p><span>还能输入</span><b class = "num">140</b><span>个字</span></p>
+                        <input type = "button" />
                     </div>
                 </div>
-                <p id = "result"><span class = "rCount"><i></i>分</span><span class = "detail right"></span></p>
+                <div id = "contentArea">
+                	<div id = "cAHeader">
+                    	<span>大家在说</span>
+                        <ul>
+                        	<li>
+                            	
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 </body>

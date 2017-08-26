@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>星级评分系统</title>
+<title>用键盘控制DIV</title>
 <link rel = "stylesheet" type = "text/css" href = "../main.css" />
-<link rel = "stylesheet" type = "text/css" href = "item_3.css" />
+<link rel = "stylesheet" type = "text/css" href = "item_4.css" />
 <script src = "../jquery-3.2.1.min.js" type = "text/javascript"></script>
-<script src = "item_3.js" type = "text/javascript"></script>
+<script src = "item_4.js" type = "text/javascript"></script>
 </head>
 
 <body>
@@ -19,8 +19,8 @@
         	<ul>
             	<li><a href = "../item_1/item_1.html">鼠标移入/移出改变图片透明度</a></li>
                 <li><a href = "../item_2/item_2.html">倒计时时钟</a></li>
-                <li class = "choosed"><a href = "">星级评分系统</a></li>
-                <li><a href = "../item_4/item_4.html">用键盘控制DIV</a></li>
+                <li><a href = "../item_3/item_3.html">星级评分系统</a></li>
+                <li class = "choosed"><a href = "">用键盘控制DIV</a></li>
                 <li><a href = "../item_5/item_5.html">仿腾讯微博效果</a></li>
                 <li><a href = "../item_6/item_6.html">移动效果（按轨迹移动）</a></li>
                 <li><a href = "../item_7/item_7.html">iPhone手机解锁效果</a></li>
@@ -38,22 +38,16 @@
         </div>
         <div id = "exhArea">
         	<div id = "container">
-            	<span class = "tip">点击星星就能打分</span>
-                <div id = "stars">
-                	<ul>
-                    	<li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <div id = "aCon">
-                    	<p class = "score"><span class = "count"><i></i>分</span><span class = "appraise"></span></p>
-                        <span class = "detail down"></span>
-                    </div>
-                </div>
-                <p id = "result"><span class = "rCount"><i></i>分</span><span class = "detail right"></span></p>
+            	<h3>红色方块为键盘操作区域，您可以进行如下操作：</h3>
+                <span>上：↑ 下：↓ 左：← 右：→</span>
+                <p>Ctrl + 1 : 背景变为绿色<br />
+				   Ctrl + 2 : 背景变为黄色<br />
+				   Ctrl + 3 : 背景变为蓝色<br />
+				   Ctrl + ↑ : 放大<br />
+				   Ctrl + ↓ : 缩小
+            	</p>
             </div>
+            <div id = "move"></div>
         </div>
 </body>
 </html>
