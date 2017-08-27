@@ -1,15 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
 #container {
-	width: 500px;
+	width: 502px;
 	margin: 0 auto;
+}
+#container > div {
+	float: left;
+	width: 500px;
 	padding: 10px 0;
 	border: 1px solid #CCC;
 	border-radius: 8px
 }
 #cHeader {
 	width: 460px;
-	padding: 0 20px
+	padding: 0 20px;
+	background: url("imgs/boxBG.jpg") repeat-x;
+	background-position: bottom;
+	margin-bottom: 10px;
+	float: left
 }
 #cHeader h3 {
 	font-size: 18px;
@@ -30,7 +38,8 @@
 	float: left;
 	margin-right: 14px;
 	text-indent: 8px;
-	padding: 0 3px
+	padding: 0 3px;
+	background: url("imgs/inputBG.png") repeat-x;
 }
 #userH {
 	float: left;
@@ -58,13 +67,14 @@
 	height: 64px;
 	border-radius: 5px;
 	resize:none;
-	padding: 5px
+	padding: 5px;
+	background: url("imgs/inputBG.png") repeat-x;
 }
 #bCon {
-	width: 250px;
 	height: 30px;
-	margin: 10px 0 0 210px;
-	padding-bottom: 14px
+	margin-top: 10px;
+	padding-bottom: 14px;
+	float: right
 }
 #bCon p {
 	float: left;
@@ -82,14 +92,18 @@
 	line-height: 30px;
 	float: left;
 	font-weight: normal;
-	margin: 0 6px
+	margin: 0 6px;
+}
+#bCon p b.over {
+	color: #F60
 }
 #bCon input {
 	width: 112px;
 	height: 100%;
 	background: url("imgs/btn.png") no-repeat;
 	border: 0;
-	cursor: pointer
+	cursor: pointer;
+	float: left
 }
 #bCon input:hover {
 	background-position: 0 -30px
@@ -97,6 +111,7 @@
 #contentArea {
 	width: 480px;
 	padding: 0 10px;
+	float: left
 }
 #cAHeader {
 	width: 100%;
@@ -114,3 +129,54 @@
 	margin: 6px 0 0 6px;
 	text-align: center
 }
+#cShowArea li {
+	width: 460px;
+	padding: 10px;
+	border-bottom: 1px dashed #CCC;
+	position: relative;
+	float: left
+}
+#cShowArea li:hover {
+	background-color: #F5F5F5
+}
+#cShowArea li img {
+	border-radius: 4px;
+	float: left;
+	margin-right: 12px;
+	width: 50px
+}
+#cShowArea li div {
+	float: left;
+	padding-top: 3px
+}
+#cShowArea li div p.say {
+	width: 388px;
+}
+#cShowArea li div p.say a {
+	color: #2B4A78;
+}
+#cShowArea li div p.say span {
+	color: #000;
+	line-height: 24px
+}
+#cShowArea li div p.say a:hover {
+	text-decoration: underline
+}
+#cShowArea li div p.time {
+	padding-top: 6px;
+	color: #889DB6;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif
+}
+#cShowArea li span.delete {
+	position: absolute;
+	right: 6px;
+	bottom: 20px;
+	cursor: pointer;
+	color: #889DB6;
+	display: none
+}
+#cShowArea li span.delete:hover {
+	text-decoration: underline
+}
+	

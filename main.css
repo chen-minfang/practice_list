@@ -67,12 +67,12 @@ html {
 }
 
 #content {
-	width: 1350px;
+	width: 90%;
 	margin: 20px auto
 }
 
 #navBar {
-	width: 320px;
+	width: 22%;
 	border-right: 1px solid #CCC;
 	font-size: 14px;
 	float: left
@@ -111,7 +111,7 @@ html {
 	color: #FFF
 }
 #exhArea {
-	width: 988px;
+	width: 72%;
 	padding: 0 20px;
 	float: left
 }
