@@ -11,7 +11,7 @@ $(document).ready(function () {
 	var mouseXArr = [];
 	var mouseYArr = [];
 	var mouseDown = false;
-	var mouseUp = false;
+	var mouseUp = true;
 	$('#container button').eq(0).click(function (event) {
 		$(this).text('根据鼠标点击位置移动(已激活)')
 			   .siblings('button').text('根据鼠标轨迹移动')
@@ -55,16 +55,19 @@ $(document).ready(function () {
 		}
 	})
 	$(document).mousedown(function () {
-		track ? mouseDown = true : mouseDown = false
+		mouseDown = track ? true : false
 	})
 	$(document).mousemove(function (event) {
+		event.preventDefault()
 		if (track && mouseDown && mouseUp) {
 			mouseXArr.push(event.clientX)
 			mouseYArr.push(event.clientY)
 		}
 	})
 	$(document).mouseup(function () {
+		mouseUp = mouseDown ? false : true
 		if(mouseXArr.length > 0) {
+			$('#container img').attr('src', 'imgs/2.gif')
 			var timer = setInterval(function () {
 				$('#container img').css(
 					{
@@ -74,7 +77,9 @@ $(document).ready(function () {
 				)
 				if(mouseXArr.length == 0) {
 					clearInterval(timer)
-					mouseDown = false	
+					$('#container img').attr('src', 'imgs/1.gif')
+					mouseDown = false
+					mouseUp = true	
 				}
 			}, 50)
 		}
