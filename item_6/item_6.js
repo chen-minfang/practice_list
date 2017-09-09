@@ -75,6 +75,7 @@ $(document).ready(function () {
 	})
 	$(document).mouseup(function (event) {
 		mouseUp = mouseDown ? false : true
+		mouseDown = false
 		if(mouseXArr.length > 0) {
 			$('#container img').attr('src', 'imgs/2.gif')
 			var timer = setInterval(function () {
@@ -87,7 +88,9 @@ $(document).ready(function () {
 				if(mouseXArr.length == 0) {
 					clearInterval(timer)
 					$('#container img').attr('src', 'imgs/1.gif')
-					mouseDown = false
+					mouseUp = true	
+				}
+				else if (mouseDown) {
 					mouseUp = true	
 				}
 			}, 50)
