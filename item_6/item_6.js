@@ -18,6 +18,7 @@ $(document).ready(function () {
 			   .siblings('p').text('鼠标点击页面，人物将移动至鼠标位置。')
 		position = true;
 		track = false;
+		event.preventDefault()
 	})
 	$('#container button').eq(1).click(function (event) {
 		$(this).text('根据鼠标轨迹移动(已激活)')	
@@ -25,6 +26,7 @@ $(document).ready(function () {
 			   .siblings('p').text('按住鼠标左键，在页面划动，人物将按照鼠标轨迹移动。')
 		track = true;
 		position = false;
+		event.preventDefault()
 	})
 	$(document).click(function (event) {
 		if (position && !$(event.target).is($('#container button').eq(0))) {
@@ -54,8 +56,15 @@ $(document).ready(function () {
 			}, 50)
 		}
 	})
-	$(document).mousedown(function () {
+	$(document).mousedown(function (event) {
 		mouseDown = track ? true : false
+		if (mouseDown && (!$(event.target).is($('#container button')))) {
+			mouseXArr.push(event.clientX)
+			mouseYArr.push(event.clientY)	
+		}
+		if ($(event.target).is($('#container button'))) {
+			mouseDown = false
+		}
 	})
 	$(document).mousemove(function (event) {
 		event.preventDefault()
@@ -64,7 +73,7 @@ $(document).ready(function () {
 			mouseYArr.push(event.clientY)
 		}
 	})
-	$(document).mouseup(function () {
+	$(document).mouseup(function (event) {
 		mouseUp = mouseDown ? false : true
 		if(mouseXArr.length > 0) {
 			$('#container img').attr('src', 'imgs/2.gif')
