@@ -10,4 +10,7 @@
 	top: 546px;
 	left: 36px
 }
+#cInner #btn:hover {
+	cursor: pointer
+}
 
